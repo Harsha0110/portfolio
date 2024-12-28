@@ -1,0 +1,137 @@
+/* General */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: #8dbbdb; /* Light blue */
+  overflow-x: hidden;
+}
+
+.home-container {
+  padding: 20px;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  background: linear-gradient(120deg, #42a5f5, #1e88e5); /* Blue shades */
+  padding: 100px 20px;
+  color: #fff;
+}
+
+.hero-title {
+  font-size: 3rem;
+  margin: 0;
+  animation: fadeInDown 1s ease-out;
+}
+
+.hero-title span {
+  color: #a80a64; /* Golden highlight */
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  animation: fadeInUp 1.5s ease-out;
+}
+
+/* About Section */
+.about {
+  margin: 50px 0;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.about-title {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.about-description p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+.highlight {
+  color: #2f8229; /* Blue highlight */
+  font-weight: bold;
+}
+
+/* Quote Section */
+.quote-section {
+  background: #42a5f5; /* Blue color */
+  padding: 50px;
+  text-align: center;
+  color: #fff;
+  margin-top: 50px;
+}
+
+.quote {
+  font-size: 1.5rem;
+  font-style: italic;
+  margin: 0;
+}
+
+.quote span {
+  display: block;
+  margin-top: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* Hover Trail Effect */
+.trail {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none; /* Prevent trail from interfering with user interactions */
+  animation: fadeTrail 0.7s ease-out;
+}
+
+@keyframes fadeTrail {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(2);
+  }
+}
+
+
+@keyframes fadeTrail {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(2);
+  }
+}
+
+/* Keyframes */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
